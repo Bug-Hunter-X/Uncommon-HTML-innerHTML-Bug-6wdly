@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // Incorrect usage of innerHTML with multiple elements
+    document.getElementById("myDiv").innerHTML = "<h1>Hello</h1><p>World!</p><p>This is a test</p>";
+    //The problem is that the multiple paragraphs are not rendered properly.  
+    //The expected behavior is that multiple paragraphs are displayed, but the output shows only one paragraph.
+  </script>
+</body>
+</html>
