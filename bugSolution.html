@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // Solution: Create elements individually and append them to the parent element
+    const h1 = document.createElement("h1");
+    h1.textContent = "Hello";
+
+    const p1 = document.createElement("p");
+    p1.textContent = "World!";
+
+    const p2 = document.createElement("p");
+    p2.textContent = "This is a test";
+
+    const div = document.getElementById("myDiv");
+    div.appendChild(h1);
+    div.appendChild(p1);
+    div.appendChild(p2);
+  </script>
+</body>
+</html>
